@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+        
+</head>
+<body bgcolor="FFFBEB">
+  <script>
+    alert("Welcome to The Fashion World !");
+  </script>
+    <img src="logo.jpg" align="left" alt="logo" height="100px" width="75px">
+    <h1 align="center"> THE FASHION WORLD</h1>
+    <div class="container">
+		<div class="header">
+			<div class="topnav">
+             <a href="index.html">Home</a>
+             <a href="aboutus.html">About Us</a>
+             <a href="gallery.html">Gallery</a>
+             <a href="bestsell.html">Bestsellers</a>
+			       <a href="contact.html">Contact Us</a>
+             <a href="signup.html"> SignUp</a>
+             <a href="login.html">LogIn</a>
+			</div>
+		</div>
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="1img.jpg" alt="clothes" style="width:100%">
+          <div class="text">Have a great shopping experience at THE FASHION WORLD.</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="2img.jpg" alt="clothes and jewellery"style="width:100%">
+          <div class="text">Many stylish clothes and jewelleries available. What's next?</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="3img.jpg" alt="bags"style="width:100%">
+          <div class="text">Wait Over! The most demanded bags collection is finally here. Shop Now!</div>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+        
+        <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+        <br>
+        <div class="dresses"><a href="sorry.jpg"><img src="1dress.jpg" alt="Pink 2 piece set and Yellow blazer" hspace="87px"style="width:82%"></a></div><br><br>
+        <div class="shoes"><img src="shoes.jpg" alt="shoes" hspace="80px"style="width:82%"></div><br>
+        <div class="thankyou"><img src="thankyou.gif" alt="thank you message" hspace="78px"style="width:82%"></div><br><br><br>
+        <footer>
+          <img src="logo.jpg" align="left" alt="logo" height="100px" width="75px" >
+          <div class="footer-content">
+              <h2> The Fashion World</h2>
+              <p>The Fashion World is a brand made with love and passion.
+                  Our customers are our biggest priority and we thank everyone of you for choosing
+                   our clothing brand. We hope that you enjoy wearing our products as much as we 
+                   enjoy creating them. We look forward to being a part of your fashion journey! <b>NEW UPDATE:</b> Now,you
+                    can send us your favorite design from <a href="https://www.pexels.com/search/%20clothes/">Clothing Page</a> and we'll make it for you.
+
+              </p>
+              <ul class="social">
+                  <li><a href="https://instagram.com/anikapoudel?igshid=ZDdkNTZiNTM="><img src="instagram.png" width="80px" height="35px"></a></li>
+                  <li><a href="https://www.facebook.com/anika.poudel?mibextid=ZbWKwL"><img src="facebook.png" width="60px" height="44px"></a></li>
+                  <li><a href="https://www.facebook.com/anika.poudel?mibextid=ZbWKwL"><img src="messenger.png" width="60px" height="53px"></a></li>
+                  <li><a href="mailto:panika22@tbc.edu.np">thefashionworld@gmail.com</a></li>
+              </ul>
+          </div>
+          <div class="footer-bottom">
+              <p>Designed and Developed By &copy; Anika Poudel 2023</p>
+          </div>
+      </footer>
+
+        
+        
+    
+
+    
+
+    
+</body>
+</html>
