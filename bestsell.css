@@ -1,0 +1,90 @@
+body {font-family: Verdana, sans-serif; margin:0; width: 1265px;
+}
+.topnav{
+	align-content: center;
+	overflow: hidden;
+	height: 150px;
+}
+.topnav a {
+	font-size: 25px;
+	float: center;
+	color: black;
+	text-align: center;
+	padding: 10px ;
+	margin: 30px;
+	text-decoration:none;
+	font-family: serif;
+}
+.topnav a:hover{
+	color: rgb(255, 161, 47);
+}
+.dress1{
+	position: absolute;
+	top: 200px;
+	
+}
+.dress2{
+	position: absolute;
+    top: 200px;
+	left: 500px;
+}
+.dress3{
+	position:absolute;
+	top: 200px;
+	left: 950px;
+
+}
+.table{
+    border-color: bisque;
+    position: absolute;
+    top: 800px;
+	left: 190px;
+    width: 1000px;
+}
+.h2{text-align: center;}
+footer{
+	position: absolute;
+    top: 1550px;
+	background-color: lightgoldenrodyellow;
+	font-family: "Open Sans";
+	color:#000000;
+  }
+  .footerContainer{
+	position: absolute;
+    top: 1550px;
+	width: 100%;
+	padding: 70px 30px 20px;
+  }
+  .footer-content{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+  }
+  .footer-content p{
+	font-size: medium;
+  }
+  
+  .social{
+	display: flex;
+	justify-content: center;
+  }
+  .social li{
+	list-style-type: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  }
+  
+  .footer-bottom{
+	text-align: center;
+	background: lightgoldenrodyellow;
+  }
+  .footer-bottom p{
+	font-size: medium;
+	align-items: center;
+  }
+
+  
+
