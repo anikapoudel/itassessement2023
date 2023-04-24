@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2</title>
+    <style>
+        #menulist {
+            list-style: none;
+        }
+
+        body {
+            background-color: #00BFFF;
+        }
+
+        .container {
+            position: absolute;
+            width: 93%;
+            height: 93%;
+            left: 42px;
+            top: 24px;
+        }
+
+        .topbar {
+            position: absolute;
+            left: 0%;
+            right: 0%;
+            top: 0%;
+            bottom: 79.17%;
+            background: #CCAA66;
+        }
+
+        .bottombar {
+            position: absolute;
+            left: 0%;
+            right: 0%;
+            top: 79.17%;
+            bottom: 0%;
+            background: #CCAA66;
+        }
+
+        .menu {
+            position: absolute;
+            left: 0%;
+            right: 83.68%;
+            top: 20.83%;
+            bottom: 20.83%;
+
+            background: #E8D882;
+        }
+
+        .content {
+            position: absolute;
+            left: 16.32%;
+            right: 0%;
+            top: 20.83%;
+            bottom: 20.83%;
+
+            background: #F1E8B0;
+        }
+
+        #toptext {
+            font-weight: 300;
+            font-size: 60px;
+
+            color: #330000 ;
+
+        }
+
+        #bottomtext {
+            font-family: 'Inter';
+            font-style: italic;
+            font-weight: 400;
+            font-size: 20px;
+        }
+
+        #bottomtext2 {
+            font-family: 'Inter';
+            font-style: italic;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            text-align: center;
+
+            color: #0057FF;
+        }
+        #contenttext{
+            margin-left: 2%;
+            color: #330000 ;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="topbar">
+            <center>
+                <h1 id="toptext">Stinkey Petes Pirates Tavern</h1>
+            </center>
+        </div>
+
+        <div class="bottombar">
+            <center>
+                <p id="bottomtext">Copyright &copy; 2011 Stinkey Pete’s Pirates Tavern</p>
+                <p id="bottomtext2">stinkeypete@arrrr.com</p>
+            </center>
+        </div>
+
+        <div class="menu">
+            <ul id="menulist">
+                <li><a href="#" active> Home</a></li><br><br>
+                <li><a href="#"> Grog</a></li><br><br>
+                <li><a href="#"> Shanties</a></li><br><br>
+                <li><a href="#"> Become a swab</a></li>
+            </ul>
+
+        </div>
+
+        <div class="content">
+            <img style="float: right; top: 10%;"src="pirate.jpg" width="20%">
+            <p id="contenttext">
+                Avast Manties ! Here yell'll be finding all the delights
+                <ul id="contentlist">
+                    <li>Great Grog</li>
+                    <li>All the rum you can drink</li>
+                    <li>Good honest pirate fare like weevily<br>
+                    biscuits and stwewd rats</li>
+                    <li>Wencehs and swabs for every tastes</li>
+                    <li>Salty seadogs singin' shanties</li>
+
+                </ul>
+                <p style="margin-left:2%"> Berth 23<br>Nottingham Docks<br>0115 9324567 </p>
+                 
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Q. 11</title>
+</head>
+<body>
+    <input id="form" type="number" placeholder="Enter value here.">
+    <button type="button" onclick="add_element()">Add</button>
+    <button type="submit" onclick="display_element()">Display</button>
+    <p id="display"></p>
+    <script>
+        var arr=[];
+        function add_element(){
+            let x=document.getElementById("form").value;
+            arr.push(x)
+            alert("Value added")
+        }
+        function display_element(){
+            let txt="";
+             for(let i=0;i<arr.length;i++){
+                txt+="Element "+i+"="+arr[i]+"<br>"
+             }
+             document.getElementById("display").innerHTML=txt;
+        }
+    </script>
+</body>
+</html>

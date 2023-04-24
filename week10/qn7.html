@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JS Q. 7 </title>
+<style>
+table, td {
+  border:.3px solid skyblue;
+  width: 100%;
+  border-spacing: 0px;
+  text-align: center;
+
+}
+</style>
+</head>
+<body>
+<table id="Table">
+</table>
+<br>
+<script>
+function tableCreate() {
+  var table = document.getElementById("Table");
+  var row = table.insertRow(0);
+  var cell1 = row.insertCell(0).innerHTML = " S.N";
+  var cell2 = row.insertCell(1).innerHTML = "Name";
+  var cell3 = row.insertCell(2).innerHTML = "Image";
+   
+  for(let i=1;i<=4;i++){
+  let row = table.insertRow(-1);
+  
+  var cell1 = row.insertCell(0);cell1.innerHTML = i;
+  
+  var cell2 = row.insertCell(1);cell2.innerHTML = "Name "+i;
+  var cell3 = row.insertCell(2);cell3.innerHTML = i+".jpg";
+  
+}
+
+}
+tableCreate();
+</script>
+</body>
+</html>
